@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A0F">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚡ CapCut AI GOD"
+            android:textColor="#FF6B35"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="by R4X • God Level Auto Editing"
+            android:textColor="#888888"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/status_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⏳ Initializing..."
+            android:textColor="#00FF88"
+            android:textSize="13sp"
+            android:background="#1A1A2E"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Overlay Button -->
+        <Button
+            android:id="@+id/btn_start_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🎯 START FLOATING OVERLAY"
+            android:backgroundTint="#FF6B35"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Bot Server -->
+        <Button
+            android:id="@+id/btn_start_bot"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="🤖 START AI BOT SERVER"
+            android:backgroundTint="#6C63FF"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btn_stop_bot"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="🛑 STOP BOT"
+            android:backgroundTint="#FF3333"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Accessibility Toggle -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#1A1A2E"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="♿ Accessibility Service"
+                android:textColor="#CCCCCC"
+                android:textSize="14sp"/>
+
+            <Switch
+                android:id="@+id/switch_accessibility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!-- Settings -->
+        <Button
+            android:id="@+id/btn_settings"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="⚙️ SETTINGS (API Key, Model)"
+            android:backgroundTint="#333355"
+            android:textColor="#AAAAFF"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Info -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📱 Vivo Y22 • Shizuku • No Root\n🔗 Connect Python bot: localhost:9999"
+            android:textColor="#555577"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+</ScrollView>
