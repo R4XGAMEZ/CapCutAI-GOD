@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A0F">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚙️ GOD MODE Settings"
+            android:textColor="#FF6B35"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- API Key -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="OpenRouter API Key" android:textColor="#AAAAAA" android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/et_api_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="sk-or-v1-..."
+            android:inputType="textPassword"
+            android:background="#1A1A2E"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Model Selector -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="AI Vision Model" android:textColor="#AAAAAA" android:layout_marginBottom="4dp"/>
+        <Spinner
+            android:id="@+id/spinner_model"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#1A1A2E"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Speed -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Bot Speed" android:textColor="#AAAAAA" android:layout_marginBottom="4dp"/>
+        <Spinner
+            android:id="@+id/spinner_speed"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#1A1A2E"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Target App -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Target Editor App" android:textColor="#AAAAAA" android:layout_marginBottom="4dp"/>
+        <Spinner
+            android:id="@+id/spinner_target"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#1A1A2E"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Bot Port -->
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Socket Server Port" android:textColor="#AAAAAA" android:layout_marginBottom="4dp"/>
+        <EditText
+            android:id="@+id/et_bot_port"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9999"
+            android:inputType="number"
+            android:background="#1A1A2E"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="💾 SAVE SETTINGS"
+            android:backgroundTint="#FF6B35"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</ScrollView>
